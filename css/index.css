@@ -1,0 +1,207 @@
+/***************
+GLOBAL CSS RULES
+****************/
+html { scroll-behavior: smooth; }
+
+* { padding: 0; margin: 0; text-decoration: none; list-style-type: none; }
+body { font-family: "roboto", sans-serif; }
+.container { max-width: 80%; margin: auto; }
+
+/**************************
+HEADER NAVIGATION CSS RULES
+***************************/
+#main-header { 
+    background-color: rgb(0,0,0,0.9);
+    height: 70vh;
+}
+
+.nav-head { 
+    position: fixed;
+    padding-top: 20px; 
+    height: 50px; 
+    width: 100%;
+    color: rgb(255,255,255);
+    z-index: 50;
+    transition: 0.2s ease-in;
+}
+
+.nav-head-js-change-color { 
+    position: fixed;
+    background-color: rgb(0,0,0);
+    padding-top: 20px; 
+    height: 50px; 
+    width: 100%;
+    color: rgb(255,255,255);
+    z-index: 50;
+    transition: 0.2s ease-out;
+}
+
+/********
+MAIN LOGO 
+*********/
+.logo-text h1 { font-size: 18px; color: rgb(255,255,255); padding-top: 5px; font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif; }
+.logo img { float: left; height: 30px; }
+.logo .logo-text { float: left;  }
+
+/**************************
+HEADER TOP NAVIGATION LINKS 
+***************************/
+.desktop-nav-links { float: right; }
+.desktop-nav-links li { display: inline-block; padding: 0 15px; }
+.desktop-nav-links a { color: rgb(250,250,250); font-size: 14px; }
+.desktop-nav-links a:hover { border-bottom: 2px solid rgb(250,250,250); padding-bottom: 10px; transition: 0.2s; }
+.desktop-nav-links .active a { border-bottom: 2px solid rgb(250,250,250); padding-bottom: 10px; }
+
+.mobile-nav-links { height: 100vh; background-color: rgb(0,0,0); margin-top: 50px; border-top: 1px solid rgb(128,128,128); display: none; }
+.mobile-nav-links li { padding: 20px 20px; }
+.mobile-nav-links a { color: rgb(250,250,250); }
+.mobile-nav-links li:hover { background-color: rgb(128,128,128); }
+
+/* HAMBURGER NAVIGATION BUTTON */
+#hamburger { float: right; display: none; cursor: pointer; margin-right: 50px; }
+#hamburger div { height: 2px; width: 30px; margin: 5px; background-color: white; }
+
+/**************
+HEADER BRANDING
+***************/
+.branding { text-align: center; clear: both; padding-top: 150px; }
+.slogan { padding-top: 200px; border-left: 1px solid rgb(128,128,128,0.1); }
+.slogan h2 { 
+    font-size: 20px; 
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(255,255,255); 
+    padding-bottom: 100px;
+}
+
+.slogan-description { position: relative; top: 200px; width: 500px;  }
+.slogan-description h1 { 
+    border-bottom: 1px solid rgb(128,128,128,0.1); 
+    color: rgb(255,255,255); 
+    text-align: left; 
+    font-size: 50px; 
+}
+
+.slogan-description p { 
+    font-size: 14px;
+    text-align: left; 
+    color: rgb(128,128,128); 
+    line-height: 2;
+}
+.slogan-inline-block { display: inline-block; }
+.vw-btn { text-align: left; padding-top: 20px; }
+.vw-btn a { 
+    color: rgb(250,250,250); 
+    font-size: 12px; 
+    border: 1px solid white;
+    padding: 2px 5px;
+    text-transform: uppercase;
+}
+.vw-btn a:hover { color: rgb(0,0,0); border: 1px solid rgb(0,0,0); transition: 0.3s; }
+
+/************************************
+GROUP WORK IMAGE BACKGROUND SECTION 1
+*************************************/
+#group-work { 
+    background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url(../img/web-wall2.jpg); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 50vh;
+}
+.group-work-image-background { text-align: center; }
+.group-work-image-background img { background-color: white; }
+
+/***********************
+MOCK UP DESIGN SECTION 2
+************************/
+#responsive-mock-up { background-color: rgb(0,0,0,0.9); }
+.mock-up-design { text-align: center; padding-top: 100px; margin: 0 50px; }
+.mock-up-design h2 { color: rgb(255,255,255); margin-top: 10px; margin-bottom: 10px; font-size: 40px; text-transform: uppercase; }
+.mock-up-design p { color: rgb(128,128,128); margin-top: 20px; }
+.mock-up-design img { margin-top: 0px; height: 500px; }
+
+/*************************
+SERVICES SECTION SECTION 3
+**************************/
+#services { background-color: rgb(24,24,24,0.9); }
+.box h2 { color: rgb(250,250,250);  }
+.box p { font-size: 14px; }
+.services-boxes { text-align: center; color: rgb(128,128,128); padding: 50px 0; }
+.services-boxes .box { width: 300px; display: inline-block; padding: 50px 50px; line-height: 1.5; }
+
+/*********************
+GO UP BUTTON SECTION 3
+**********************/
+#go-up { text-align: center; }
+
+/*********************
+FOOTER LINKS CSS RULES
+**********************/
+#main-footer { background-color: rgb(0,0,0,0.9); }
+.foot-title { text-align: center; }
+.foot-title h1 { 
+    border-bottom: 1px solid rgb(128,128,128,0.1); 
+    font-size: 30px; 
+    text-transform: uppercase;
+    /*font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;*/
+    padding: 20px;
+    color: rgb(255,255,255); 
+}
+
+.contacts p { color: rgb(128,128,128);   text-align: center; padding: 30px 0 0; font-size: 14px;  }
+.contacts a { color: rgb(184,134,11); text-decoration: underline; }
+.contacts a:hover { text-decoration: none; }
+.credits p { 
+    color: rgb(128,128,128); 
+    text-align: center; 
+    font-size: 12px; 
+    padding: 30px 0;
+}
+.credits a { color: rgb(184,134,11); }
+
+.foot-links { text-align: center; }
+.foot-links li { display: inline-block; padding: 2px; }
+.social-media-links { margin-bottom: 50px; }
+.social-media-links img { height: 30px; }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*************************
+RESPONSIVE INDEX CSS RULES
+**************************/
+@media screen and (max-width: 800px) {
+    .logo-text h1 { display: none; }
+    .desktop-nav-links li { display: none; }
+    .mock-up-design img { height: 100%; width: 100%; }
+
+    /* HAMBURGER MENU */
+    #hamburger { 
+        display: block;
+        padding-top: 2px;
+    }
+}
+
+/*
+@media screen and (max-width: 630px) {
+    .branding { text-align: left; margin: 20px 50px; }
+    .slogan-description { position: relative; top: 0; }
+}
+*/
