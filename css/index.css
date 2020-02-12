@@ -99,9 +99,9 @@ HEADER BRANDING
 }
 .vw-btn a:hover { color: rgb(184,134,11); border: 1px solid rgb(0,0,0); transition: 0.3s; }
 
-/************************************
-GROUP WORK IMAGE BACKGROUND SECTION 1
-*************************************/
+/**************************
+GROUP WORK IMAGE BACKGROUND
+***************************/
 #group-work { 
     background-image: linear-gradient(rgb(0,0,0,0.5),rgb(0,0,0,0.5)), url(../img/web-wall2.jpg); 
     background-repeat: no-repeat;
@@ -113,27 +113,27 @@ GROUP WORK IMAGE BACKGROUND SECTION 1
 .group-work-image-background { text-align: center; }
 .group-work-image-background img { background-color: white; }
 
-/***********************
-MOCK UP DESIGN SECTION 2
-************************/
+/*************
+MOCK UP DESIGN
+**************/
 #responsive-mock-up { background-color: rgb(0,0,0,0.9); }
 .mock-up-design { text-align: center; padding-top: 100px; margin: 0 50px; }
 .mock-up-design h2 { color: rgb(255,255,255); margin-top: 10px; margin-bottom: 10px; font-size: 40px; text-transform: uppercase; }
 .mock-up-design p { color: rgb(128,128,128); margin-top: 20px; }
 .mock-up-design img { margin-top: 0px; height: 500px; }
 
-/*************************
-SERVICES SECTION SECTION 3
-**************************/
+/***************
+SERVICES SECTION
+****************/
 #services { background-color: rgb(24,24,24,0.9); }
 .box h2 { color: rgb(250,250,250);  }
 .box p { font-size: 14px; }
 .services-boxes { text-align: center; color: rgb(128,128,128); padding: 50px 0; }
 .services-boxes .box { width: 300px; display: inline-block; padding: 50px 50px; line-height: 1.5; }
 
-/*********************
-GO UP BUTTON SECTION 3
-**********************/
+/***********
+GO UP BUTTON
+************/
 #go-up { text-align: center; }
 
 /*********************
@@ -198,6 +198,8 @@ RESPONSIVE INDEX CSS RULES
         display: block;
         padding-top: 2px;
     }
+
+    /* NAVIGATION HEAD */
     .nav-head { 
         position: fixed;
         background-color: rgb(0,0,0); 
@@ -205,6 +207,21 @@ RESPONSIVE INDEX CSS RULES
         height: 50px; 
         width: 100%;
     }
+
+    .slogan { padding-top: 0; }
+    .slogan h2 { 
+    font-size: 15px; 
+    padding-bottom: 150px;
+}
+
+    .slogan-description { position: relative; top: 220px; width: 360px; }
+    .slogan-description h1 { 
+        font-size: 50px; 
+    }
+
+
+}
+
 
 /*
 @media screen and (max-width: 630px) {
